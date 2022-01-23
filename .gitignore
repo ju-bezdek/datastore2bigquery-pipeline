@@ -1,0 +1,5 @@
+secrets/credentials.json
+transform/__pycache__/
+.vscode/
+config.yaml
+

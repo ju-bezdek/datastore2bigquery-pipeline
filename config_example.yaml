@@ -1,0 +1,16 @@
+kinds_to_export:
+  kind1:
+    field: created_at
+  kind1:
+    field: created_at
+ 
+
+run_options:
+  project_id: yout-project-id
+  gcs_temp_dir: gs://your-path
+  dataset: yout_datasetname
+  region: europe-west
+  machine_type: n1-standard-1
+  num_workers: 2
+  disk_size_gb: 10
+  autoscaling_algorithm: NONE
