@@ -1,4 +1,4 @@
-# Datapipeline to extract newer data from datastore to BigQuery
+# Datapipeline to extract newer data from Google Datastore to BigQuery
 
 Extracts newer data for defined kinds from Google datastore, filtered by some timestamp column
 
@@ -9,7 +9,17 @@ configure config.yaml as by provideded config_example.yaml
 download your google cloud service account key to ./secrets/credentials.json
 
 For local run
-> python main.py --runner DirectRunner 
 
-For run as Google DataFlow pipeline
-> python main.py --runner DirectRunner 
+```sh
+python main.py --runner direct 
+```
+
+For run as Google Dataflow pipeline
+
+```sh
+python main.py --runner dataflow
+```
+
+### References
+
+Inspired by similar project [jkrajniak/demo-datastore-export-filtering](https://github.com/jkrajniak/demo-datastore-export-filtering)
